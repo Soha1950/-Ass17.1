@@ -46,6 +46,7 @@ The majority of the customers are married.
 The chart above illustrates the bank's call rate and customer response rate for each month, with the trend lines moving in different directions. This can be interpreted in two ways: either the bank increases its calls when demand for deposits declines, or the timing of the calls is suboptimal. The highest call rates occurred in May and August, while the highest subscription rates were in March and September.
 
 ![image](https://github.com/Soha1950/-Ass17.1/assets/160794678/80711c98-aae0-45a0-be62-852e648bbe0a)
+
 It's apparent that certain numerical features display notable correlations. For instance, "nr.employed" and "euribor3m" exhibit a correlation coefficient of 0.95, while "euribor3m" and "emp.var.rate" show a correlation of 0.97. These correlations stand out as exceptionally high when compared to others observed in the heatmap.
 
 
