@@ -49,10 +49,73 @@ The chart above illustrates the bank's call rate and customer response rate for 
 
 It's apparent that certain numerical features display notable correlations. For instance, "nr.employed" and "euribor3m" exhibit a correlation coefficient of 0.95, while "euribor3m" and "emp.var.rate" show a correlation of 0.97. These correlations stand out as exceptionally high when compared to others observed in the heatmap.
 
+![image](https://github.com/Soha1950/-Ass17.1/assets/160794678/3d662958-d7bd-4e50-a432-166dcbb96efc)
+
+The feature duration has the highest importance by a significant margin.
+Other features like euribor3m, age, nr.employed, and job also have noticeable importance.
+Features like default, contact, loan, and previous have the least importance.
+This plot is crucial for understanding which features contribute the most to the model's predictions, potentially guiding feature selection and further analysis. 
+
+![image](https://github.com/Soha1950/-Ass17.1/assets/160794678/ad1d2783-21f8-4f4c-90e2-6673708a152b)
 
 
+# Left Plot (PCA for Discretised Dataset):
+
+X-axis: Represents the principal components.
+Y-axis: Represents the variance explained by each principal component.
+The first few principal components explain a significant portion of the variance, with the first component explaining the most.
+
+# Right Plot (PCA for Continuous Dataset):
+
+X-axis: Represents the principal components.
+Y-axis: Represents the variance explained by each principal component.
+Similarly, the first few principal components explain a significant portion of the variance, with the first component explaining the most.
 
 
+![image](https://github.com/Soha1950/-Ass17.1/assets/160794678/875f3d35-e8ed-4c97-b96f-58155202020a)
 
+# Left Plot: 2D PCA Projection
+### Title: "First two PCA directions"
+Axes:
+X-axis: Represents the first principal component (PC1).
+Y-axis: Represents the second principal component (PC2).
+### Data Points:
+Data points are colored based on the target variable y, with two classes: 0 (navy) and 1 (darkorange).
+Each point represents an observation from the dataset, projected onto the first two principal components.
+Legend: Indicates the classes (0 and 1) with their respective colors.
+Purpose: This plot shows how the dataset can be represented in a lower-dimensional space (2D) while retaining as much variance as possible. It helps visualize the separation or overlap between different classes.
+# Right Plot: 3D PCA Projection
+### Title: "First three PCA directions"
+Axes:
+X-axis: Represents the first principal component (PC1).
+Y-axis: Represents the second principal component (PC2).
+Z-axis: Represents the third principal component (PC3).
+### Data Points:
+Similar to the 2D plot, data points are colored based on the target variable y, with two classes: 0 (navy) and 1 (darkorange).
+Each point represents an observation from the dataset, projected onto the first three principal components.
+Legend: Indicates the classes (0 and 1) with their respective colors.
+Purpose: This plot extends the visualization to three dimensions, providing a more comprehensive view of the data structure and the relationships between classes. The 3D perspective helps identify any additional patterns or separations that may not be evident in the 2D plot.
+
+	
+# Classification Algorithms¶
+
+The algorithms compared are Decision Tree (Tree), K-Nearest Neighbors (KNN), Logistic Regression, and Support Vector Machine (SVM). Each algorithm is represented by a different colored bar, and the accuracy is measured on the training data.
+
+![image](https://github.com/Soha1950/-Ass17.1/assets/160794678/b769a569-6d4b-42d5-83e5-3a7666bfc995)
+
+
+Each bar represents the accuracy of a specific algorithm.
+Tree: Accuracy is approximately 0.889.
+KNN: Accuracy is approximately 0.902.
+LogisticRegression: Accuracy is approximately 0.910.
+SVM: Accuracy is approximately 0.912.
+The color of each bar corresponds to a different algorithm as indicated by the legend on the right side of the chart.
+Summary of the Accuracy Scores:
+SVM has the highest training data accuracy at approximately 0.912.
+LogisticRegression follows closely with a training accuracy of approximately 0.910.
+KNN has a training accuracy of approximately 0.902.
+Tree (Decision Tree) has the lowest training accuracy among the compared algorithms at approximately 0.889.
+Interpretation:
+High Training Accuracy: All algorithms exhibit high training accuracy, with SVM and Logistic Regression performing slightly better than KNN and Tree.
 
 
